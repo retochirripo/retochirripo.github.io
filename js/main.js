@@ -63,7 +63,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, false, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -71,7 +71,7 @@
     // Header carousel
     $(".header-carousel").owlCarousel({
         autoplay: true,
-        smartSpeed: false,
+        smartSpeed: 1500,
         items: 1,
         dots: false,
         loop: true,
@@ -83,27 +83,29 @@
     });
 
 
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: false, //1000 equivale a un segundo 
-        center: true,
-        margin: 24,
-        dots: true,
-        loop: true,
-        nav : false,
-        responsive: {
-            0:{
-                items:1
-            },
-            768:{
-                items:2
-            },
-            992:{
-                items:3
-            }
+   // Testimonials carousel
+$(".testimonial-carousel").owlCarousel({
+    autoplay: true,
+    autoplayTimeout: 60000, // Cada imagen estará visible durante 60 segundos
+    smartSpeed: 1000, // Tiempo de transición entre imágenes (1 segundo)
+    center: true,
+    margin: 24,
+    dots: true,
+    loop: true,
+    nav: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        768: {
+            items: 2
+        },
+        992: {
+            items: 3
         }
-    });
+    }
+});
+
     
 })(jQuery);
 
