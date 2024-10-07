@@ -1,0 +1,54 @@
+ .bottom-image 
+            {
+            width: 100%; /* Asegúrate de que la imagen ocupe el 100% del ancho */
+            height: 50px; /* Altura de la imagen */
+            object-fit: contain; /* Asegúrate de que la imagen mantenga su aspecto */
+            }
+
+  .modal-dialog {
+                max-width: 95%; /* Forzar el ancho completo */
+                margin: auto; /* Centrar horizontalmente */
+                height: auto; /* Permitir que el contenido determine la altura */
+                display: flex; /* Para centrar verticalmente */
+                align-items: center; /* Alinear al centro verticalmente */
+                justify-content: center; /* Alinear al centro horizontalmente */
+                border-radius: 15px; /* Opcional: eliminar bordes redondeados */
+
+            }
+
+            .modal-content {
+                width: 95%; /* Asegurar que el contenido use todo el ancho disponible */
+                height: auto; /* Ajustar a la altura del contenido */
+                border-radius: 15px; /* Opcional: eliminar bordes redondeados */
+                overflow: hidden; /* Asegurar que el contenido no se desborde */
+
+            }
+
+
+    /*cuadro en la galerria de años*/
+
+            .clock-box {
+                width: 100px; /* Ajusta el ancho como desees */
+                height: auto; /* Mantiene la altura automática */
+                text-align: center; /* Centra el contenido dentro del cuadro */
+                border: 1px solid #ccc; /* Opcional: agrega un borde para definir el cuadro */
+                border-radius: 5px; /* Opcional: bordes redondeados */
+                padding: 10px; /* Espaciado interno */
+                background-color: white; /* Color de fondo ligero */
+                margin: 0 auto; /* Centra el cuadro horizontalmente */
+            }
+
+            .clock-icon {
+                width: 28%; /* Tamaño relativo que se ajustará a su contenedor */
+                max-width: 28px; /* Tamaño máximo para que no crezca demasiado */
+                height: auto; /* Mantiene la proporción de la imagen */
+                display: block; /* Asegura que se trate como un bloque */
+                margin: 0 auto; /* Centra la imagen horizontalmente */
+            }
+
+
+                .small-text_ {
+            font-size: 15px; /* Tamaño de fuente más pequeño */
+            color: black; /* Color del texto */
+        }
+
