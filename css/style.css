@@ -455,3 +455,9 @@ color: #FFFFFF;
 .footer-light {
     background-color: rgba(0, 60, 53, 1) !important;
 }
+
+.btn:focus {
+    outline: none;
+    box-shadow: none; /* Esto eliminará cualquier sombra de foco */
+    border-color: rgba(87, 23, 137, 1); /* Puedes mantener el mismo color que el texto */
+}
