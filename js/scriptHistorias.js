@@ -6,6 +6,10 @@
             document.getElementById("dianaCarousel").style.display = "none";
             document.getElementById("jaimeCarousel").style.display = "none";
             document.getElementById("yuliCarousel").style.display = "none";
+                    // Reinicia todos los carruseles a la primera diapositiva
+            $('#dianaCarousel').carousel(0); // Reinicia el carrusel de Diana
+            $('#jaimeCarousel').carousel(0); // Reinicia el carrusel de Jaime
+            $('#yuliCarousel').carousel(0);  // Reinicia el carrusel de Yuliana
 
             // Muestra el carrusel correspondiente
             if (person === 'Diana Carolina Segura Bolanos') {
