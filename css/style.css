@@ -74,6 +74,21 @@
     font-weight: normal;
     border-radius: 0px;
 }
+/*** Button States ***/
+.btn:focus,
+.btn:active,
+.btn:visited {
+    outline: none !important; /* Eliminar el borde de enfoque */
+    box-shadow: none !important; /* Eliminar la sombra */
+    border: none !important; /* Eliminar cualquier borde adicional */
+}
+
+/* Si deseas un efecto específico al pasar el mouse */
+.btn:hover {
+    box-shadow: none; /* Opcional: Asegúrate de que no haya sombra al pasar el mouse */
+    border: none; /* Opcional: Mantener sin borde al pasar el mouse */
+}
+
 
 
 /*** Navbar ***/
@@ -454,10 +469,4 @@ color: #FFFFFF;
 }
 .footer-light {
     background-color: rgba(0, 60, 53, 1) !important;
-}
-
-.btn:focus {
-    outline: none;
-    box-shadow: none; /* Esto eliminará cualquier sombra de foco */
-    border-color: rgba(87, 23, 137, 1); /* Puedes mantener el mismo color que el texto */
 }
