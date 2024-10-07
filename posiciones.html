@@ -29,6 +29,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+     <link href="css/stylePosiciones.css" rel="stylesheet">
 </head>
 
 <body>
@@ -250,70 +251,6 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-<script>
-    function openModal(title, imageUrl, content) {
-        // Asignar el título
-        document.getElementById('modalTitle').textContent = title;
-        
-        // Asignar la URL de la imagen
-        document.getElementById('modalImage').src = imageUrl;
-        
-        // Asignar el contenido adicional
-        document.getElementById('modalContent').textContent = content;
-        
-        // Mostrar el modal
-        var modal = new bootstrap.Modal(document.getElementById('imageModal'));
-        modal.show();
-    }
-</script>
-
-
-<style>
-    .modal-dialog {
-        max-width: 95%; /* Ancho máximo al 95% para pantallas pequeñas */
-        width: auto; /* Permitir que el ancho se ajuste al contenido */
-        margin: 1.75rem auto; /* Añadir algo de margen para evitar que se pegue a los bordes */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 15px; /* Bordes redondeados */
-
-    }
-
-    @media (min-width: 768px) {
-        .modal-dialog {
-            max-width: 70%; /* Para pantallas medianas o mayores, ajusta el ancho */
-        }
-    }
-
-    .modal-content {
-        width: 100%; /* Asegura que el contenido ocupe el ancho del modal */
-        height: auto; /* Ajusta la altura al contenido */
-        border-radius: 15px; /* Bordes rectos */
-        overflow: hidden; /* Asegurar que el contenido no se desborde */
-
-    }
-
-    /* Ajustar el alto del modal para centrarlo verticalmente en la pantalla */
-    .modal.fade .modal-dialog {
-        height: 100%; /* Asegura que el modal ocupe toda la altura de la ventana */
-    }
-
-    .modal.fade .modal-dialog .modal-content {
-        max-height: calc(100vh - 3.5rem); /* Limita la altura del contenido al tamaño de la pantalla menos un margen */
-        overflow-y: auto; /* Añade scroll si el contenido es demasiado largo */
-    }
-</style>
-
-<style type="text/css">
-    .bottom-image {
-    width: 100%; /* Asegúrate de que la imagen ocupe el 100% del ancho */
-    height: 50px; /* Altura de la imagen */
-    object-fit: contain; /* Asegúrate de que la imagen mantenga su aspecto */
-}
-
-</style>
-
 
 
     <!-- JavaScript Libraries -->
@@ -326,6 +263,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/scriptModalPosiciones.js"></script>
 </body>
 
 </html>
