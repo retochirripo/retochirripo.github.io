@@ -28,31 +28,44 @@
   //           $('#myModal').modal('show'); // Usa jQuery para mostrar el modal
   //       }
 
+
+
 function openModal(title, content, person) {
+    // Actualiza el título y contenido del modal
     document.getElementById("modalTitle").innerText = title; 
     document.getElementById("modalContent").innerText = content; 
 
     const carouselIds = ["yuliCarousel", "jonathanCarousel", "nataliaCarousel", "mariaCarousel", "joyCarousel", "willianCarousel"]; 
 
+    // Oculta todos los carruseles y reinicia su estado
     carouselIds.forEach(id => {
         document.getElementById(id).style.display = "none";
         $('#' + id).carousel(0); // Reinicia el carrusel
     });
 
+    // Mapa de personas a carruseles
     const carousels = {
         'Yuliana Valverde Alfaro': 'yuliCarousel',
         'Jonathan Mejias Borges': 'jonathanCarousel',
-        'Natalia Venegas Luna':'nataliaCarousel',
-        'Maria Isabel Barquero Herrera':'mariaCarousel',
-        'Joy Vargas Barrantes':'joyCarousel',
-        'William Alonso Camacho Mejía':'willianCarousel'
+        'Natalia Venegas Luna': 'nataliaCarousel',
+        'Maria Isabel Barquero Herrera': 'mariaCarousel',
+        'Joy Vargas Barrantes': 'joyCarousel',
+        'William Alonso Camacho Mejía': 'willianCarousel'
     };
 
+    // Muestra el carrusel correspondiente
     const carouselId = carousels[person];
     if (carouselId) {
         document.getElementById(carouselId).style.display = "block"; 
-        $('#' + carouselId).carousel(0); // Reinicia el carrusel
     }
 
-    $('#myModal').modal('show'); // Muestra el modal
+    // Muestra el modal
+    $('#myModal').modal('show'); // Usa jQuery para mostrar el modal
+
+    // Espera a que el modal se haya mostrado completamente para iniciar el carrusel
+    $('#myModal').on('shown.bs.modal', function () {
+        if (carouselId) {
+            $('#' + carouselId).carousel(0); // Inicia el carrusel
+        }
+    });
 }
