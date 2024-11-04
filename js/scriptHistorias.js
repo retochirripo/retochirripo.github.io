@@ -29,22 +29,17 @@
   //       }
 
 function openModal(title, content, person) {
-    document.getElementById("modalTitle").innerText = title; // Actualiza el título del modal
-    document.getElementById("modalContent").innerText = content; // Actualiza el contenido del modal
+    document.getElementById("modalTitle").innerText = title; 
+    document.getElementById("modalContent").innerText = content; 
 
-    // Oculta todos los carruseles
-    const carouselIds = ["yuliCarousel", "jonathanCarousel","nataliaCarousel","mariaCarousel","joyCarousel","willianCarousel"]; 
-    // "dianaCarousel", "jaimeCarousel", 
+    const carouselIds = ["yuliCarousel", "jonathanCarousel", "nataliaCarousel", "mariaCarousel", "joyCarousel", "willianCarousel"]; 
 
     carouselIds.forEach(id => {
         document.getElementById(id).style.display = "none";
-        $('#' + id).carousel(0); // Reinicia el carrusel
+        $('#' + id).carousel(0);
     });
 
-    // Mapa de personas a carruseles
     const carousels = {
-        // 'Diana Carolina Segura Bolanos': 'dianaCarousel',
-        // 'Jaime Mendez Porras': 'jaimeCarousel',
         'Yuliana Valverde Alfaro': 'yuliCarousel',
         'Jonathan Mejias Borges': 'jonathanCarousel',
         'Natalia Venegas Luna':'nataliaCarousel',
@@ -53,12 +48,18 @@ function openModal(title, content, person) {
         'William Alonso Camacho Mejía':'willianCarousel'
     };
 
-    // Muestra el carrusel correspondiente
     const carouselId = carousels[person];
     if (carouselId) {
-        document.getElementById(carouselId).style.display = "block"; // Muestra el carrusel correspondiente
+        document.getElementById(carouselId).style.display = "block"; 
     }
 
     // Muestra el modal
-    $('#myModal').modal('show'); // Usa jQuery para mostrar el modal
+    $('#myModal').modal('show'); 
+
+    // Agrega un pequeño retraso antes de iniciar el carrusel
+    setTimeout(() => {
+        if (carouselId) {
+            $('#' + carouselId).carousel('refresh'); // Asegúrate de que el carrusel se refresque
+        }
+    }, 100); // Retraso de 100ms
 }
