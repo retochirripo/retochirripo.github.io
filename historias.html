@@ -732,16 +732,61 @@
         </div>
     <!-- MODAL FIN-->
 
-    <br>
-        <!-- Sección Inicial con Botón de Historias de Éxito -->
-        <div class="container-fluid p-0" style="background-color: rgba(250, 250, 250, 1);">
-            <div class="container-xxl py-3 text-center">
-                <button class="btn btn-primary" onclick="toggleTestimonials()" style="font-size: 1.2rem; padding: 10px 20px;">
-                    Historias de éxitos del mes de Octubre
-                </button>
-            </div>
+  
+
+  <!-- Sección Inicial con Botón de Historias de Éxito -->
+<div class="container-fluid p-0" style="background-color: rgba(250, 250, 250, 1);">
+    <div class="container-xxl py-3 text-center">
+        <button class="btn btn-primary" onclick="toggleTestimonials()" style="font-size: 1.2rem; padding: 10px 20px;">
+            Historias de éxitos del mes de Octubre
+        </button>
+    </div>
+</div>
+
+<!-- Sección de Testimonios Oculta por Defecto -->
+<div id="testimonialSection" class="container-xxl py-5" style="display: none;">
+    <div class="container wow fadeInUp" data-wow-delay="0.1s">
+        <div class="text-center">
+            <h6 class="section-title bg-white text-center px-3" style="color: rgba(0, 60, 53, 1);">Historias</h6>
+            <h1 class="mb-5" style="color: rgba(0, 60, 53, 1);">Trayectorias de Éxito</h1>
         </div>
-    <br>
+        
+        <div class="owl-carousel testimonial-carousel position-relative">
+            <!-- Testimonio 1 -->
+            <div class="testimonial-item text-center" onclick="openModal('Joy Vargas Barrantes', 'Supervisor de Ingeniería de Proceso Sr','Joy Vargas Barrantes')">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/joy.png" style="width: 150px; height: 150px;">
+                <h5 class="mb-0">Joy Vargas Barrantes</h5>
+                <p>Supervisor de Ingeniería de Proceso Sr</p>
+                <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Mi nombre es Joy Vargas, hace 8 años que llegué a Establishment Labs donde inicié un camino de mucho aprendizaje...</p>
+                </div>
+            </div>
+            
+            <!-- Testimonio 2 -->
+            <div class="testimonial-item text-center" onclick="openModal('William Alonso Camacho Mejía', 'Ingeniero de Equipamiento', 'William Alonso Camacho Mejía')">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/willian.png" style="width: 150px; height: 150px;">
+                <h5 class="mb-0">William Alonso Camacho Mejía</h5>
+                <p>Ingeniero de Equipamiento</p>
+                <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Mi nombre es William Alonso Camacho Mejía, y me gustaría compartir mi trayectoria en ESTA...</p>
+                </div>
+            </div>
+
+            <!-- Agregar más testimonios aquí -->
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleTestimonials() {
+        const section = document.getElementById('testimonialSection');
+        section.style.display = section.style.display === 'none' ? 'block' : 'none';
+    }
+</script>
+
+
+
+
 
 
 
@@ -767,65 +812,7 @@
     </div>
 </div>
     <!-- Footer End -->
-<div id="testimonialSection" class="container-xxl py-5" style="display: none;">
-    <div class="container wow fadeInUp" data-wow-delay="0.1s">
-        <div class="text-center">
-            <h6 class="section-title bg-white text-center px-3" style="color: rgba(0, 60, 53, 1);"> Historias </h6>
-            <h1 class="mb-5"style="color: rgba(0, 60, 53, 1);">Trayectorias de Éxito</h1>
-        </div>
-        <div class="owl-carousel testimonial-carousel position-relative">
-            <div class="testimonial-item text-center" onclick="openModal('Joy Vargas Barrantes', 'Supervisor de Ingeniería de Proceso Sr','Joy Vargas Barrantes')">
-                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/joy.png" style="width: 150px; height: 150px;">
-                <h5 class="mb-0">Joy Vargas Barrantes</h5>
-                <p>Supervisor de Ingeniería de Proceso Sr</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                        <p class="mb-0">Mi nombre es Joy Vargas, hace 8 años que llegué a Establishment Labs donde inicié un camino de mucho aprendizaje. Desde entonces siempre me he puesto metas profesionales, las cuales he logrado alcanzar gracias a mi dedicación, compromiso y persistencia, siempre buscando ser mejor cada día personal y profesionalmente.</p>
-                    </div>
-            </div>
-            <div class="testimonial-item text-center" onclick="openModal('William Alonso Camacho Mejía', 'Ingeniero de Equipamiento', 'William Alonso Camacho Mejía')">
-                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/willian.png" style="width: 150px; height: 150px;">
-                <h5 class="mb-0">William Alonso Camacho Mejía</h5>
-                <p>Ingeniero de Equipamiento</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                        <p class="mb-0">Mi nombre es William Alonso Camacho Mejía, y me gustaría compartir mi trayectoria en ESTA. Mi viaje comenzó hace ocho años, en 2016, cuando finalicé mi práctica profesional del colegio. Desde entonces, a través de esfuerzo, dedicación y trabajo constante, he ido avanzando paso a paso en mi desarrollo profesional. Este camino ha sido una experiencia profundamente enriquecedora y, al mismo tiempo, llena de retos, lo que ha contribuido significativamente a mi crecimiento personal y profesional.
-                        </p>
-                    </div>
-            </div>
-            <div class="testimonial-item text-center" onclick="openModal('Yuliana Valverde Alfaro', 'Buyer','Yuliana Valverde Alfaro')">
-                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/yuli-removebg-preview.png" style="width: 150px; height: 150px;">
-                <h5 class="mb-0">Yuliana Valverde Alfaro</h5>
-                <p>Buyer</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                         <p class="mb-0">Mi nombre es Yuliana Valverde Alfaro y quiero compartir mi trayectoria en ESTA. Mi viaje comenzó hace ocho años, y cada paso en mi desarrollo profesional ha sido una experiencia enriquecedora y desafiante.</p>
-                    </div>
-            </div>
-            <div class="testimonial-item text-center" onclick="openModal('Jonathan Mejias Borges', 'Administrador de Salesforce y Mulesoft','Jonathan Mejias Borges')">
-                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/jonathan.jpg" style="width: 150px; height: 150px;">
-                <h5 class="mb-0">Jonathan Mejias Borges</h5>
-                <p>Administrador de Salesforce y Mulesoft</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                         <p class="mb-0">Soy Jonathan Mejías y quiero compartir mi trayectoria en ESTA. Desde hace 4 años, cada paso en mi desarrollo profesional ha sido enriquecedor y desafiante. He tenido la oportunidad de conocer personas que han visto potencial en mí y me han ayudado a crecer tanto profesional como personalmente. He aprovechado las oportunidades de crecimiento que ofrece la empresa, gracias a mi preparación académica y el apoyo de mis managers, supervisores, líderes y compañeros, quienes me han motivado a participar en diversos concursos internos.</p>
-                    </div>
-            </div>
-            <div class="testimonial-item text-center" onclick="openModal('Natalia Venegas Luna', 'Supervisor de Manufactura Jr','Natalia Venegas Luna')">
-                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Picture22.png" style="width: 150px; height: 150px;">
-                <h5 class="mb-0">Natalia Venegas Luna</h5>
-                <p>Supervisor de Manufactura Jr</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                         <p class="mb-0">Soy Natalia Venegas y me gustaría compartir mi trayectoria en ESTA. Mi viaje comenzó hace siete años, y cada etapa de mi desarrollo profesional ha sido tanto enriquecedora como desafiante. A lo largo de este tiempo, he tenido la oportunidad de aprender y crecer en un entorno dinámico que me ha permitido superar obstáculos y alcanzar nuevas metas.</p>
-                    </div>
-            </div>
-            <div class="testimonial-item text-center" onclick="openModal('Maria Isabel Barquero Herrera', 'Ingeniero de Calidad Jr','Maria Isabel Barquero Herrera')">
-                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/maria.png" style="width: 150px; height: 150px;">
-                <h5 class="mb-0">Maria Isabel Barquero Herrera</h5>
-                <p>Ingeniero de Calidad Jr</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                         <p class="mb-0">Mi nombre es María Barquero y quiero compartir mi trayectoria en ESTA. Mi viaje comenzó hace más de siete años, el trabajo en ESTA se convirtió en una de mis mejores experiencias laborales, y donde marco un antes y un después en mi vida profesional, esto complementado con disciplina y pensamiento orientado hacia las metas son los factores claves para el éxito.</p>
-                    </div>
-            </div>
-        </div>
-    </div>  
-</div>
+
 
 
 
