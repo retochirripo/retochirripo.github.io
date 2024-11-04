@@ -33,7 +33,8 @@ function openModal(title, content, person) {
     document.getElementById("modalContent").innerText = content; // Actualiza el contenido del modal
 
     // Oculta todos los carruseles
-    const carouselIds = ["yuliCarousel", "jonathanCarousel","nataliaCarousel","mariaCarousel","joyCarousel","willianCarousel","oscarCarousel","daneyCarousel","jaimeCarousel"]; 
+    const carouselIds = ["yuliCarousel", "jonathanCarousel","nataliaCarousel","mariaCarousel","joyCarousel","willianCarousel"]; 
+    // "dianaCarousel", "jaimeCarousel", 
 
     carouselIds.forEach(id => {
         document.getElementById(id).style.display = "none";
@@ -43,15 +44,13 @@ function openModal(title, content, person) {
     // Mapa de personas a carruseles
     const carousels = {
         // 'Diana Carolina Segura Bolanos': 'dianaCarousel',
-        'Jaime Mendez Porras': 'jaimeCarousel',
+        // 'Jaime Mendez Porras': 'jaimeCarousel',
         'Yuliana Valverde Alfaro': 'yuliCarousel',
         'Jonathan Mejias Borges': 'jonathanCarousel',
         'Natalia Venegas Luna':'nataliaCarousel',
         'Maria Isabel Barquero Herrera':'mariaCarousel',
         'Joy Vargas Barrantes':'joyCarousel',
-        'William Alonso Camacho Mejía':'willianCarousel',
-        'Oscar Martinez Herrera':'oscarCarousel',
-        'Daney Obando Fonseca':'daneyCarousel'
+        'William Alonso Camacho Mejía':'willianCarousel'
     };
 
     // Muestra el carrusel correspondiente
