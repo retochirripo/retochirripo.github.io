@@ -33,8 +33,7 @@ function openModal(title, content, person) {
     document.getElementById("modalContent").innerText = content; // Actualiza el contenido del modal
 
     // Oculta todos los carruseles
-    const carouselIds = ["yuliCarousel", "jonathanCarousel","nataliaCarousel","mariaCarousel","joyCarousel","willianCarousel","oscarCarousel","daneyCarousel"]; 
-    // "dianaCarousel", "jaimeCarousel", 
+    const carouselIds = ["yuliCarousel", "jonathanCarousel","nataliaCarousel","mariaCarousel","joyCarousel","willianCarousel","oscarCarousel","daneyCarousel","jaimeCarousel"]; 
 
     carouselIds.forEach(id => {
         document.getElementById(id).style.display = "none";
