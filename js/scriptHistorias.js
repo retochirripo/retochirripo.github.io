@@ -36,7 +36,7 @@ function openModal(title, content, person) {
 
     carouselIds.forEach(id => {
         document.getElementById(id).style.display = "none";
-        $('#' + id).carousel(0);
+        $('#' + id).carousel(0); // Reinicia el carrusel
     });
 
     const carousels = {
@@ -51,15 +51,8 @@ function openModal(title, content, person) {
     const carouselId = carousels[person];
     if (carouselId) {
         document.getElementById(carouselId).style.display = "block"; 
+        $('#' + carouselId).carousel(0); // Reinicia el carrusel
     }
 
-    // Muestra el modal
-    $('#myModal').modal('show'); 
-
-    // Agrega un pequeño retraso antes de iniciar el carrusel
-    setTimeout(() => {
-        if (carouselId) {
-            $('#' + carouselId).carousel('refresh'); // Asegúrate de que el carrusel se refresque
-        }
-    }, 100); // Retraso de 100ms
+    $('#myModal').modal('show'); // Muestra el modal
 }
