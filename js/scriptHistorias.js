@@ -33,7 +33,7 @@ function openModal(title, content, person) {
     document.getElementById("modalContent").innerText = content; // Actualiza el contenido del modal
 
     // Oculta todos los carruseles
-    const carouselIds = ["yuliCarousel", "jonathanCarousel","nataliaCarousel","mariaCarousel","joyCarousel","willianCarousel"]; 
+    const carouselIds = ["yuliCarousel", "jonathanCarousel","nataliaCarousel","mariaCarousel","joyCarousel","willianCarousel","oscarCarousel","daneyCarousel"]; 
     // "dianaCarousel", "jaimeCarousel", 
 
     carouselIds.forEach(id => {
@@ -50,7 +50,10 @@ function openModal(title, content, person) {
         'Natalia Venegas Luna':'nataliaCarousel',
         'Maria Isabel Barquero Herrera':'mariaCarousel',
         'Joy Vargas Barrantes':'joyCarousel',
-        'William Alonso Camacho Mejía':'willianCarousel'
+        'William Alonso Camacho Mejía':'willianCarousel',
+        'Oscar Martinez Herrera':'oscarCarousel',
+        'Daney Obando Fonseca':'daneyCarousel',
+        'Jaime Mendez Porras':'jaimeCarousel'
     };
 
     // Muestra el carrusel correspondiente
