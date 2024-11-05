@@ -45,12 +45,10 @@ function openModal(title, content, person) {
 
     // Mapa de personas a carruseles
     const carousels = {
-        'Yuliana Valverde Alfaro': 'yuliCarousel',
-        'Jonathan Mejias Borges': 'jonathanCarousel',
-        'Natalia Venegas Luna': 'nataliaCarousel',
-        'Maria Isabel Barquero Herrera': 'mariaCarousel',
-        'Joy Vargas Barrantes': 'joyCarousel',
-        'William Alonso Camacho Mejía': 'willianCarousel'
+        'Daney Obando Fonseca': 'yuliCarousel',
+        'Diego Ramirez Alfaro': 'jonathanCarousel',
+        'Jaime Mendez Porras': 'joyCarousel',
+        'Oscar Martinez Herrera': 'willianCarousel'
     };
 
     // Muestra el carrusel correspondiente
