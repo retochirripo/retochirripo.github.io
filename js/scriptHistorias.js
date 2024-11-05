@@ -35,7 +35,7 @@ function openModal(title, content, person) {
     document.getElementById("modalTitle").innerText = title; 
     document.getElementById("modalContent").innerText = content; 
 
-    const carouselIds = ["yuliCarousel", "jonathanCarousel", "nataliaCarousel", "mariaCarousel", "joyCarousel", "willianCarousel"]; 
+    const carouselIds = ["yuliCarousel", "jonathanCarousel", "joyCarousel", "willianCarousel"]; 
 
     // Oculta todos los carruseles y reinicia su estado
     carouselIds.forEach(id => {
