@@ -30,49 +30,7 @@
 
 
 
-    // function openModal(title, content, person) {
-    // // Actualiza el título y contenido del modal
-    // document.getElementById("modalTitle").innerText = title; 
-    // document.getElementById("modalContent").innerText = content; 
-
-    // const carouselIds = ["daneyCarousel", "diegoCarousel", "jaimeCarousel", "oscarCarousel", "joseCarousel", "javierCarousel"]; 
-
-    // // Oculta todos los carruseles y reinicia su estado
-    // carouselIds.forEach(id => {
-    // document.getElementById(id).style.display = "none";
-    // $('#' + id).carousel(0); // Reinicia el carrusel
-    // });
-
-    // // Mapa de personas a carruseles
-    // const carousels = {
-    // 'Daney Obando Fonseca': 'daneyCarousel',
-    // 'Diego Ramirez Alfaro': 'diegoCarousel',
-    // 'Jaime Mendez Porras': 'jaimeCarousel',
-    // 'Oscar Martinez Herrera': 'oscarCarousel',
-    // 'Jose Alfredo Vasquez Rojas': 'joseCarousel',
-    // 'Javier Quesada Rodriguez': 'javierCarousel'
-
-    // };
-
-    // // Muestra el carrusel correspondiente
-    // const carouselId = carousels[person];
-    // if (carouselId) {
-    // document.getElementById(carouselId).style.display = "block"; 
-    // }
-
-    // // Muestra el modal
-    // $('#myModal').modal('show'); // Usa jQuery para mostrar el modal
-
-    // // Espera a que el modal se haya mostrado completamente para iniciar el carrusel
-    // $('#myModal').on('shown.bs.modal', function () {
-    // if (carouselId) {
-    //     $('#' + carouselId).carousel(0); // Inicia el carrusel
-    // }
-    // });
-    // }
-
-
-function openModal(title, content, person) {
+    function openModal(title, content, person) {
     // Actualiza el título y contenido del modal
     document.getElementById("modalTitle").innerText = title; 
     document.getElementById("modalContent").innerText = content; 
@@ -81,35 +39,37 @@ function openModal(title, content, person) {
 
     // Oculta todos los carruseles y reinicia su estado
     carouselIds.forEach(id => {
-        const carousel = document.getElementById(id);
-        carousel.style.opacity = "0"; // Oculta el carrusel temporalmente
-        $('#' + id).carousel(0); // Reinicia el carrusel
+    document.getElementById(id).style.display = "none";
+    $('#' + id).carousel(0); // Reinicia el carrusel
     });
 
     // Mapa de personas a carruseles
     const carousels = {
-        'Daney Obando Fonseca': 'daneyCarousel',
-        'Diego Ramirez Alfaro': 'diegoCarousel',
-        'Jaime Mendez Porras': 'jaimeCarousel',
-        'Oscar Martinez Herrera': 'oscarCarousel',
-        'Jose Alfredo Vasquez Rojas': 'joseCarousel',
-        'Javier Quesada Rodriguez': 'javierCarousel'
+    'Daney Obando Fonseca': 'daneyCarousel',
+    'Diego Ramirez Alfaro': 'diegoCarousel',
+    'Jaime Mendez Porras': 'jaimeCarousel',
+    'Oscar Martinez Herrera': 'oscarCarousel',
+    'Jose Alfredo Vasquez Rojas': 'joseCarousel',
+    'Javier Quesada Rodriguez': 'javierCarousel'
+
     };
 
     // Muestra el carrusel correspondiente
     const carouselId = carousels[person];
     if (carouselId) {
-        const selectedCarousel = document.getElementById(carouselId);
-        selectedCarousel.style.opacity = "1"; // Asegura que sea visible
+    document.getElementById(carouselId).style.display = "block"; 
     }
 
-    // Limpia cualquier evento previo y muestra el modal
-    $('#myModal').off('shown.bs.modal').on('shown.bs.modal', function () {
-        if (carouselId) {
-            $('#' + carouselId).carousel(0); // Inicia el carrusel después de abrir el modal
-        }
+
+    // Espera a que el modal se haya mostrado completamente para iniciar el carrusel
+    $('#myModal').on('shown.bs.modal', function () {
+    if (carouselId) {
+        $('#' + carouselId).carousel(0); // Inicia el carrusel
+    }
     });
-    
-    // Muestra el modal
-    $('#myModal').modal('show'); 
-}
+        // Muestra el modal
+    $('#myModal').modal('show'); // Usa jQuery para mostrar el modal
+
+    }
+
+
