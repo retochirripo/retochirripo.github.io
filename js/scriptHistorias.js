@@ -38,12 +38,10 @@
     const carouselIds = ["daneyCarousel", "diegoCarousel", "jaimeCarousel", "oscarCarousel", "joseCarousel", "javierCarousel"]; 
 
     // Oculta todos los carruseles y reinicia su estado
-      carouselIds.forEach(id => {
-        const carouselElement = document.getElementById(id);
-        carouselElement.style.visibility = "hidden"; // Cambia a invisible en lugar de display:none
-        $('#' + id).carousel(0); // Reinicia el carrusel
+    carouselIds.forEach(id => {
+    document.getElementById(id).style.display = "none";
+    $('#' + id).carousel(0); // Reinicia el carrusel
     });
-
 
     // Mapa de personas a carruseles
     const carousels = {
@@ -59,21 +57,16 @@
     // Muestra el carrusel correspondiente
     const carouselId = carousels[person];
     if (carouselId) {
-        const selectedCarousel = document.getElementById(carouselId);
-        selectedCarousel.style.visibility = "visible"; // Cambia a visible
+    document.getElementById(carouselId).style.display = "block"; 
     }
 
     // Muestra el modal
     $('#myModal').modal('show'); // Usa jQuery para mostrar el modal
 
-   
-    // Limpia eventos previos para evitar duplicaciones
-    $('#myModal').off('shown.bs.modal').on('shown.bs.modal', function () {
-        if (carouselId) {
-            $('#' + carouselId).carousel(0); // Reinicia el carrusel al abrir el modal
-        }
-    });
-    
+    // Espera a que el modal se haya mostrado completamente para iniciar el carrusel
+    $('#myModal').on('shown.bs.modal', function () {
+    if (carouselId) {
+        $('#' + carouselId).carousel(0); // Inicia el carrusel
     }
-
-
+    });
+    }
