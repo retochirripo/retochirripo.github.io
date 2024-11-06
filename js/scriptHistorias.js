@@ -60,6 +60,8 @@
     document.getElementById(carouselId).style.display = "block"; 
     }
 
+    // Muestra el modal
+    $('#myModal').modal('show'); // Usa jQuery para mostrar el modal
 
     // Espera a que el modal se haya mostrado completamente para iniciar el carrusel
     $('#myModal').on('shown.bs.modal', function () {
@@ -67,9 +69,7 @@
         $('#' + carouselId).carousel(0); // Inicia el carrusel
     }
     });
-        // Muestra el modal
-    $('#myModal').modal('show'); // Usa jQuery para mostrar el modal
-
+    
     }
 
 
