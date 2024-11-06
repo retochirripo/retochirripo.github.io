@@ -82,7 +82,7 @@ function openModal(title, content, person) {
     // Oculta todos los carruseles y reinicia su estado
     carouselIds.forEach(id => {
         const carousel = document.getElementById(id);
-        carousel.style.opacity = "0";  // Oculta el carrusel temporalmente
+        carousel.style.opacity = "0"; // Oculta el carrusel temporalmente
         $('#' + id).carousel(0); // Reinicia el carrusel
     });
 
@@ -99,16 +99,14 @@ function openModal(title, content, person) {
     // Muestra el carrusel correspondiente
     const carouselId = carousels[person];
     if (carouselId) {
-        const carousel = document.getElementById(carouselId);
-        carousel.style.opacity = "1";  // Asegura que sea visible
+        const selectedCarousel = document.getElementById(carouselId);
+        selectedCarousel.style.opacity = "1"; // Asegura que sea visible
     }
 
     // Limpia cualquier evento previo y muestra el modal
     $('#myModal').off('shown.bs.modal').on('shown.bs.modal', function () {
         if (carouselId) {
-            setTimeout(function() {
-                $('#' + carouselId).carousel(0); // Inicia el carrusel después de un pequeño retraso
-            }, 50); // Espera 50 ms para asegurar el redibujado
+            $('#' + carouselId).carousel(0); // Inicia el carrusel después de abrir el modal
         }
     });
     
