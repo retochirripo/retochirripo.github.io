@@ -35,7 +35,7 @@ function openModal(title, content, person) {
     document.getElementById("modalTitle").innerText = title; 
     document.getElementById("modalContent").innerText = content; 
 
-    const carouselIds = ["yuliCarousel", "jonathanCarousel", "joyCarousel", "willianCarousel"]; 
+    const carouselIds = ["daneyCarousel", "diegoCarousel", "jaimeCarousel", "oscarCarousel","joseCarousel","javierCarousel"]; 
 
     // Oculta todos los carruseles y reinicia su estado
     carouselIds.forEach(id => {
@@ -45,10 +45,13 @@ function openModal(title, content, person) {
 
     // Mapa de personas a carruseles
     const carousels = {
-        'Daney Obando Fonseca': 'yuliCarousel',
-        'Diego Ramirez Alfaro': 'jonathanCarousel',
-        'Jaime Mendez Porras': 'joyCarousel',
-        'Oscar Martinez Herrera': 'willianCarousel'
+        'Daney Obando Fonseca': 'daneyCarousel',
+        'Diego Ramirez Alfaro': 'diegoCarousel',
+        'Jaime Mendez Porras': 'jaimeCarousel',
+        'Oscar Martinez Herrera': 'oscarCarousel',
+        'Jose Alfredo Vasquez Rojas': 'joseCarousel',
+        'Javier Quesada Rodriguez': 'javierCarousel'
+
     };
 
     // Muestra el carrusel correspondiente
