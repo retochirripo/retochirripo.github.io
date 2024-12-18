@@ -49,7 +49,7 @@
     'Sebastian Calvo Rodriguez': 'sebasCarousel',
     'Dagoberto Salazar Zamora': 'dagobertoCarousel',
     'Evelin Serrano Jiménez': 'eveCarousel',
-    'Gustavo Salazar Mirandaas': 'gustavoCarousel',
+    'Gustavo Salazar Miranda': 'gustavoCarousel',
     'Marcos Barrantes Vega': 'marcosCarousel'
 
     };
