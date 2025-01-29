@@ -35,7 +35,7 @@
     document.getElementById("modalTitle").innerText = title; 
     document.getElementById("modalContent").innerText = content; 
 
-    const carouselIds = ["susanCarousel", "sebasCarousel", "dagobertoCarousel", "eveCarousel", "gustavoCarousel", "marcosCarousel"]; 
+    const carouselIds = ["katerinCarousel", "ivanCarousel", "andreyCarousel", "meliCarousel", "erickCarousel", "michaelCarousel"]; 
 
     // Oculta todos los carruseles y reinicia su estado
     carouselIds.forEach(id => {
@@ -45,12 +45,12 @@
 
     // Mapa de personas a carruseles
     const carousels = {
-    'Susan Acosta Guadamuz': 'susanCarousel',
-    'Sebastian Calvo Rodriguez': 'sebasCarousel',
-    'Dagoberto Salazar Zamora': 'dagobertoCarousel',
-    'Evelin Serrano Jiménez': 'eveCarousel',
-    'Gustavo Salazar Miranda': 'gustavoCarousel',
-    'Marcos Barrantes Vega': 'marcosCarousel'
+    'Katerin Rodriguez Vega': 'katerinCarousel',
+    'Ivan Oporta Zeledon': 'ivanCarousel',
+    'Andrey Cespedes Carmona': 'andreyCarousel',
+    'Melissa Alfaro Picado': 'meliCarousel',
+    'Erick Rodriguez Marín': 'erickCarousel',
+    'Michael Brenes Lopez': 'michaelCarousel'
 
     };
 
