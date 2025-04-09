@@ -35,7 +35,11 @@
     document.getElementById("modalTitle").innerText = title; 
     document.getElementById("modalContent").innerText = content; 
 
-    const carouselIds = ["paolaCarousel", "aronCarousel", "brendaCarousel", "douglasCarousel", "edwinCarousel", "magdaCarousel"]; 
+
+//MODIFICAR BUSCAR LOS ID DEL MODAL
+   const carouselIds = ["xiomaraCarousel", "aronCarousel", "brendaCarousel", "douglasCarousel", "edwinCarousel", "magdaCarousel"]; 
+//MODIFICAR FIN
+
 
     // Oculta todos los carruseles y reinicia su estado
     carouselIds.forEach(id => {
@@ -43,9 +47,11 @@
     $('#' + id).carousel(0); // Reinicia el carrusel
     });
 
+
+//MODIFICAR NOMBRE DE LA PERSONA Y EL ID DEL MODAL
     // Mapa de personas a carruseles
     const carousels = {
-    'Paola Loria Zamora': 'paolaCarousel',
+    'Xiomara Gomez Chavarria': 'xiomaraCarousel',
     'Aron Rodriguez Jimenez': 'aronCarousel',
     'Brenda Castro Valenciano': 'brendaCarousel',
     'Douglas Ortiz Ortiz': 'douglasCarousel',
@@ -53,6 +59,8 @@
     'Magda Moya Ramirez': 'magdaCarousel'
 
     };
+//MODIFICAR FIN
+
 
     // Muestra el carrusel correspondiente
     const carouselId = carousels[person];
