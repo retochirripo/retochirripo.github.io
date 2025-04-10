@@ -37,7 +37,7 @@
 
 
 //MODIFICAR BUSCAR LOS ID DEL MODAL
-   const carouselIds = ["xiomaraCarousel", "dianaCarousel", "brendaCarousel", "douglasCarousel", "edwinCarousel", "magdaCarousel"]; 
+   const carouselIds = ["xiomaraCarousel", "dianaCarousel", "hellebCarousel", "josueCarousel", "kennethCarousel", "luisCarousel"]; 
 //MODIFICAR FIN
 
 
@@ -53,10 +53,10 @@
     const carousels = {
     'Xiomara Gomez Chavarria': 'xiomaraCarousel',
     'Diana Priscilla Camacho Viales': 'dianaCarousel',
-    'Brenda Castro Valenciano': 'brendaCarousel',
-    'Douglas Ortiz Ortiz': 'douglasCarousel',
-    'Edwin Jimenez Leal': 'edwinCarousel',
-    'Magda Moya Ramirez': 'magdaCarousel'
+    'Hellen Sanchez Salas': 'hellebCarousel',
+    'Josue Solís Aguilar': 'josueCarousel',
+    'Kenneth Araya Castillo': 'kennethCarousel',
+    'Luis Bolaños Murillo': 'luisCarousel'
 
     };
 //MODIFICAR FIN
