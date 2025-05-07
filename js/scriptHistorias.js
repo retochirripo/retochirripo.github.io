@@ -37,7 +37,7 @@
 
 
 //MODIFICAR BUSCAR LOS ID DEL MODAL
-   const carouselIds = ["cristoferCarousel", "josethCarousel", "lissisCarousel", "mainorCarousel", "marilynCarousel", "luisCarousel"]; 
+   const carouselIds = ["cristoferCarousel", "josethCarousel", "lissisCarousel", "mainorCarousel", "marilynCarousel", "yeinerCarousel"]; 
 //MODIFICAR FIN
 
 
@@ -56,7 +56,7 @@
     'Lissis Barrantes Condori': 'lissisCarousel',
     'Mainor Santamaría González': 'mainorCarousel',
     'Marilyn Ureña Barrantes': 'marilynCarousel',
-    'Luis Bolaños Murillo': 'luisCarousel'
+    'Yeiner Mendoza Zuniga': 'yeinerCarousel'
 
     };
 //MODIFICAR FIN
