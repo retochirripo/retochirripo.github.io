@@ -37,7 +37,7 @@
 
 
 //MODIFICAR BUSCAR LOS ID DEL MODAL
-   const carouselIds = ["cristoferCarousel", "josethCarousel", "lissisCarousel", "mainorCarousel", "marilynCarousel", "yeinerCarousel"]; 
+   const carouselIds = ["fernandaCarousel", "yaironCarousel", "amyCarousel", "daniCarousel", "jordanCarousel", "mailynCarousel"]; 
 //MODIFICAR FIN
 
 
@@ -51,12 +51,12 @@
 //MODIFICAR NOMBRE DE LA PERSONA Y EL ID DEL MODAL
     // Mapa de personas a carruseles
     const carousels = {
-    'Cristofer Venegas Oses': 'cristoferCarousel',
-    'Joseth Alvarez Rojas': 'josethCarousel',
-    'Lissis Barrantes Condori': 'lissisCarousel',
-    'Mainor Santamaría González': 'mainorCarousel',
-    'Marilyn Ureña Barrantes': 'marilynCarousel',
-    'Yeiner Mendoza Zuniga': 'yeinerCarousel'
+    'Fernanda Ortega Montes': 'fernandaCarousel',
+    'Yairon Gutiérrez Martínez': 'yaironCarousel',
+    'Amy Rojas Galo': 'amyCarousel',
+    'Juan Daniel Rocha Barrera': 'daniCarousel',
+    'Jordan Guzman Rivera': 'jordanCarousel',
+    'Mailyn Marin Abarca': 'mailynCarousel'
 
     };
 //MODIFICAR FIN
