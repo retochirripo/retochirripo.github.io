@@ -51,12 +51,12 @@
 //MODIFICAR NOMBRE DE LA PERSONA Y EL ID DEL MODAL
     // Mapa de personas a carruseles
     const carousels = {
-    'Joseth Alvarez Rojas': 'jossCarousel',
-    'Andres Alonso Rojas Solis': 'andresCarousel',
-    'Anthony Zamora Mejia ': 'toniCarousel',
-    'Lisbeth Tatiana Esquivel Araya': 'lisCarousel',
-    'Mariela Ospino Arroyo': 'marielaCarousel',
-    'Yeison Gonzalez Rodriguez': 'yeisonCarousel',
+    'Xochitl Chavarria Serrano': 'xochitlCarousel',
+    'Byron Mauricio Esquivel Alfaro': 'byronCarousel',
+    'Maria Celeste Mena Sojo': 'celesteCarousel',
+    'Ivan Ruiz Alvarez': 'ivanCarousel',
+    'Osvaldo Fuentes Gonzalez': 'osvaCarousel',
+    'Keyrin Quesada Quesada': 'keyrinCarousel',
 
     };
 //MODIFICAR FIN
