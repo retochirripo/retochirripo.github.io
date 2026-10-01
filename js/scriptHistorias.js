@@ -37,7 +37,7 @@
 
 
 //MODIFICAR BUSCAR LOS ID DEL MODAL
-   const carouselIds = ["jossCarousel", "andresCarousel", "toniCarousel", "lisCarousel","marielaCarousel","yeisonCarousel"]; 
+   const carouselIds = ["xochitlCarousel", "byronCarousel", "celesteCarousel", "ivanCarousel","osvaCarousel","keyrinCarousel"]; 
 //MODIFICAR FIN
 
 
