@@ -51,7 +51,7 @@
 //MODIFICAR NOMBRE DE LA PERSONA Y EL ID DEL MODAL
     // Mapa de personas a carruseles
     const carousels = {
-    'Xochitl Chavarria Serrano': 'xochitlCarouse',
+    'Xochitl Chavarria Serrano': 'xochitlCarousel',
     'Byron Mauricio Esquivel Alfaro': 'byronCarousel',
     'Maria Celeste Mena Sojo': 'celesteCarousel',
     'Ivan Ruiz Alvarez': 'ivanCarousel',
